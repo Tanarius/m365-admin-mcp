@@ -1,6 +1,6 @@
 # M365 Admin MCP Server
 
-[![tests](https://github.com/OWNER/REPO/actions/workflows/tests.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/tests.yml)
+[![tests](https://github.com/Tanarius/m365-admin-mcp/actions/workflows/tests.yml/badge.svg)](https://github.com/Tanarius/m365-admin-mcp/actions/workflows/tests.yml)
 
 An MCP server that lets Claude answer Microsoft 365 and Entra ID admin questions through Microsoft Graph.
 
@@ -70,8 +70,8 @@ All four are Microsoft Graph application permissions. All are read-only.
 No Microsoft account needed. You need Python 3.11 or later and [uv](https://docs.astral.sh/uv/).
 
 ```bash
-git clone https://github.com/OWNER/REPO.git
-cd REPO
+git clone https://github.com/Tanarius/m365-admin-mcp.git
+cd m365-admin-mcp
 uv sync
 ```
 
@@ -90,7 +90,7 @@ To use it from Claude Desktop, add this to `claude_desktop_config.json` (Setting
   "mcpServers": {
     "m365-admin": {
       "command": "uv",
-      "args": ["--directory", "C:\\path\\to\\REPO", "run", "server.py"],
+      "args": ["--directory", "C:\\path\\to\\m365-admin-mcp", "run", "server.py"],
       "env": { "MODE": "mock" }
     }
   }
@@ -102,7 +102,7 @@ If Claude Desktop can't find `uv`, use the full path to `uv.exe` as the `command
 For Claude Code:
 
 ```bash
-claude mcp add m365-admin -e MODE=mock -- uv --directory /path/to/REPO run server.py
+claude mcp add m365-admin -e MODE=mock -- uv --directory /path/to/m365-admin-mcp run server.py
 ```
 
 Then ask Claude "Who isn't set up for MFA?"
