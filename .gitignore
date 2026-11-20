@@ -1,0 +1,9 @@
+# Secrets and logs: never commit these.
+.env
+audit.log
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
