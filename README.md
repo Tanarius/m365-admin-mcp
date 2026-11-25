@@ -178,4 +178,4 @@ MIT. See [LICENSE](LICENSE).
 
 ---
 
-Built with Claude Code. I designed the guardrails and tested every tool. and verified it against a live tenant.
+Built with Claude Code. I designed the guardrails, tested every tool, and verified it against a live tenant." I'll update your resume to match.
