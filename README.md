@@ -6,11 +6,15 @@ An MCP server that lets Claude answer Microsoft 365 and Entra ID admin questions
 
 It gives an AI assistant read-only access to admin data, with limits on what it can see and a log of everything it asks.
 
+
+## Why I built this
+
+At an MSP I check MFA gaps and stale accounts across many tenants. I wanted to see if an AI could do that safely.
+
 ## Demo
 
-Screenshot: coming soon.
+Screenshot: <img width="829" height="1261" alt="MCP Screenshot" src="https://github.com/user-attachments/assets/8c6de63f-7c19-4a7c-bcc3-0580aa2daecd" />
 
-Video (2 minutes): coming soon.
 
 ## What it does
 
@@ -174,4 +178,4 @@ MIT. See [LICENSE](LICENSE).
 
 ---
 
-Built with Claude Code. I designed the guardrails and tested every tool.
+Built with Claude Code. I designed the guardrails and tested every tool. and verified it against a live tenant.
